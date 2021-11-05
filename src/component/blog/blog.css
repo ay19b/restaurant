@@ -1,0 +1,91 @@
+.blog{
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 8% 0%;
+
+}
+.blog .design{
+    font-family: "Dancing Script", cursive;
+    color: #eb5860;
+    font-weight: normal;
+    font-size: 40px;
+    display: block;
+    position: relative;
+    line-height: 1;
+    margin-bottom: -12px;
+}
+.blog .header{
+    font-size: 35px;
+    font-weight: 700;
+    color: black;
+    line-height: 40px;
+}
+.list-blog{
+    display:flex;
+    width: 95%;
+    padding-top: 4%;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	margin-top:8%;
+}
+.blg{
+    display:flex;
+    flex-direction: column;
+    margin-left: 5%;
+    background-color: white;
+    padding-bottom: 2%;
+    box-shadow: 1px 9px 9px 1px #e3dede;
+	width: 260px;
+	margin-bottom:8%;
+}
+.blg img{
+    height:12rem;
+    width: 100%;
+	object-fit: cover;
+}
+.dtl-blg{
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.blg h3{
+    font-size: 17px;
+    width: 80%;
+    line-height: 25px;
+    text-align: left;
+    color: black;
+}
+.tls{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position:relative;
+}
+.tls button{
+    width: 40%;
+    background-color: rgb(233, 6, 6);
+    padding: 2%;
+    color: white;
+    border: none;
+    margin-top: 5%;
+}
+.tls .cmnt{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: -12%;
+}
+@media screen and (max-width: 610px){
+.list-blog{
+	justify-content: center;
+}
+}

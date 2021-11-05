@@ -1,0 +1,162 @@
+.master-chef{
+    background-color: #f7f7f7;
+    text-align: center;
+}
+.master-chef .design{
+    font-family: "Dancing Script", cursive;
+    color: #eb5860;
+    font-weight: normal;
+    font-size: 40px;
+    display: block;
+    position: relative;
+    line-height: 1;
+    margin-bottom: -12px;
+    padding-top: 4%;
+}
+.master-chef .header{
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    line-height: 40px;
+}
+.list-chef{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 6%;
+}
+.list-chef .chef{
+    width: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    position:relative;
+	padding-bottom: 2%;
+    box-shadow: 1px 2px 4px 3px #ccc;
+	margin-bottom: 15%;
+}
+/*.chef::before{
+    position: absolute;
+    left: 12px;
+    width: 40px;
+    height: 20px;
+    background: #e52b34;
+    content: '';
+    z-index: 0;
+    bottom: -5%;
+}
+.chef::after{
+    position: absolute;
+    left: 12px;
+    width: 40px;
+    height: 20px;
+    background: #e52b34;
+    content: '';
+    z-index: 0;
+    bottom: -5%;
+}*/
+
+.chef img{
+    width:100%;
+    height:16rem;
+	object-fit: cover;
+}
+.chef h3{
+    font-size: 17px;
+    color:black;
+}
+.chef span{
+    color: #ccc;
+}
+.chef p{
+    margin-top: 4%;
+    width: 86%;
+    line-height: 1.6rem;
+}
+.chef svg{
+	position: absolute;
+    bottom: -7%;
+    font-size: 2rem;
+    left: 5%;
+	fill: red;
+	stroke:red;
+}
+.detail{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10%;
+    padding:0% 6%;
+    background-color: white;
+}
+.detail .img{
+    width: 13rem;
+    height: 20rem;
+    margin-right: 2%;
+}
+.detail img{
+    width: 100%;
+    height: 20rem;
+	object-fit: cover;
+}
+.inf-detail{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+	width: 20rem;
+}
+.inf-detail h1{
+    font-family: "Dancing Script", cursive;
+    color: #eb5860;
+    font-weight: normal;
+    font-size: 40px;
+    display: block;
+    position: relative;
+    line-height: 1;
+    margin-bottom: -12px;
+}
+.inf-detail span{
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    line-height: 40px;
+}
+.inf-detail p{
+    margin: 3% 0%;
+    color: rgb(146, 142, 142);
+    text-align: start;
+    line-height: 35px;
+}
+.inf-detail button{
+    width: 100px;
+    padding: 2%;
+    background-color: rgb(233, 6, 6);
+    color:white;
+}
+
+@media screen and (max-width: 495px){
+.list-chef{
+    justify-content: center;
+}
+.detail {
+    justify-content: center;
+}
+}
+@media screen and (max-width:320px) {
+.master-chef .design {
+    font-size: 35px;
+	margin-bottom: -15px;
+}
+.master-chef .header {
+    font-size: 30px;
+}
+.inf-detail h1 {
+    font-size: 35px; 
+}
+.inf-detail span {
+    font-size: 29px;
+}
+}

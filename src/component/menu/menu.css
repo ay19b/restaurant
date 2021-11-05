@@ -1,0 +1,115 @@
+.Menu{
+    padding-top: 5%;
+    text-align: center;
+}
+.Menu .design{
+    font-family: "Dancing Script", cursive;
+    color: #eb5860;
+    font-weight: normal;
+    font-size: 40px;
+    display: block;
+    position: relative;
+    line-height: 1;
+    margin-bottom: -12px;
+}
+.Menu .head-menu{
+    font-size: 35px;
+    font-weight: 700;
+    color: black;
+    line-height: 40px;
+}
+.Categorys{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4% 4%;
+	justify-content: center;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    margin-bottom: 4%;
+    border: 1px dashed #6f5d5d;
+    margin-right: 2%;
+    background-color: #f7f7f7;
+    padding: 2% 0 3% 0;
+}
+.category:hover{
+	border: 1px dashed red;
+}
+.category h3{
+    margin-bottom: 9%;
+    color: rgba(0, 0, 0, 0.8);
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 5% 10px 0% 14px;
+    margin-bottom: 8%;
+}
+/*.product::after{
+    border: 1px dashed #6f5d5d;
+    width:70%;
+    position:absolute;
+    content:" ";
+    margin: auto;
+	margin-bottom:1%;
+}*/
+.dtl-prod{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.product img{
+    width: 30%;
+    border-radius: 50%;
+}
+.dtl-prod h2{
+    width: 6%;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 23px;
+    margin-left: -33%;
+    color: black;
+}
+.dtl-prod h3{
+    font-size: 20px;
+    color: red;
+}
+.product span{
+    margin-left: 38%;
+    width: 51%;
+    line-height: 30px;
+    text-align: left;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 920px){
+.rs-navbar-default:nth-child(1) {
+    display: none;
+}
+}
+@media screen and (max-width: 320px){
+	
+.Menu .design {
+    font-size: 35px;
+}
+.category {
+    width: 15rem;
+}
+.category h3{
+	font-size:25px;
+}
+.dtl-prod h2 {
+    font-size: 20px;
+    margin-left: -32%;
+}
+.dtl-prod h3{
+	font-size: 20px;
+}
+.product span {
+    font-size: 15px;
+}
+}
