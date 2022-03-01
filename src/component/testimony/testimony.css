@@ -6,6 +6,21 @@
     background-attachment: fixed;
     width:100%;
 }
+.disc-testi .design{
+    font-family: "Dancing Script", cursive;
+    color: #eb5860;
+    font-weight: normal;
+    display: block;
+    position: relative;
+    line-height: 1;
+    margin-bottom: -12px;
+    padding-top: 4%;
+}
+.disc-testi .header{
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+}
 .disc-testi{
     background-color: rgba(0,0,0,0.5);
     color: white;
@@ -41,10 +56,9 @@
     background-color: transparent;
     margin-top:1%;
 }
-.slid p {
-    width: 22rem;
+.slid .prg {
+    width: 75%;
     margin-bottom: 2%;
-    font-size: 16px;
     text-align: center;
 }
 .slid .image {
@@ -76,12 +90,13 @@
 .slid .inf{
     font-size: 12px;
     color:#ccc;
+    text-align: center;
 }
 .rs-carousel-label-wrapper input:checked ~ label {
     background-color: red;
 }
 .rs-carousel-placement-bottom .rs-carousel-toolbar {
-    bottom: 110px;
+    bottom: 70px;
 }
 
 
@@ -89,7 +104,6 @@
 .slid p {
     width: 36%;
     margin-bottom: 2%;
-    font-size: 20px;
     text-align: center;
 }
 .slid .image {
@@ -98,16 +112,12 @@
     margin: 2% 0%;
 }
 .slid h1 {
-    font-size: 25px;
     line-height: 6px;
 }
 .slid .inf {
-    font-size: 14px;
     color: #ccc;
 }
-.rs-carousel-placement-bottom .rs-carousel-toolbar {
-    bottom: -10px;
-}
+
 .rs-carousel-shape-dot .rs-carousel-label {
     width: 15px;
     height: 15px;
@@ -119,12 +129,6 @@
 }
 
 @media screen and (max-width: 320px){
-.disc-testi span {
-    font-size: 25px;
-}
-.disc-testi h2 {
-    font-size: 35px; 
-}
 .slid p {
     width: 15rem; 
 }

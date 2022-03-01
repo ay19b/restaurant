@@ -5,7 +5,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 14px;
     padding-bottom: 1%;
     margin-top: -2%;
     flex:1;
@@ -39,12 +38,15 @@ nav.active{
     background-color: #030f0f;
     z-index: 15;
     box-shadow: 0px 3px 12px -3px #fff;
+    position: fixed;
+    width: 100%;
+    padding: 0%;
 }
 .navbar-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 93%;
     margin: auto;
     padding: 1%;
     background: rgba(0, 0, 0, 0.4);
@@ -52,7 +54,6 @@ nav.active{
 }
 .logo{
     color: red;
-    font-size: 2rem;
     z-index: 1;
     font-weight: bold;
     flex: 0.3;
@@ -83,12 +84,8 @@ nav.active{
     margin-right: 27px;
     cursor: pointer;
     color: white;
-    font-size: 0.8rem;
 }
 .list-nav .item-nav a:hover{
-    color: #b10b5e;
-}
-.item-nav:first-child a{
     color: #b10b5e;
 }
 .item-nav:first-child:hover a{

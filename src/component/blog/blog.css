@@ -22,21 +22,20 @@
 }
 .list-blog{
     display:flex;
-    width: 95%;
     padding-top: 4%;
 	flex-wrap:wrap;
 	justify-content: space-between;
-	margin-top:8%;
+	margin-top:4%;
 }
 .blg{
     display:flex;
     flex-direction: column;
-    margin-left: 5%;
     background-color: white;
     padding-bottom: 2%;
     box-shadow: 1px 9px 9px 1px #e3dede;
 	width: 260px;
 	margin-bottom:8%;
+    flex: 0.32;
 }
 .blg img{
     height:12rem;
@@ -49,8 +48,8 @@
     flex-direction: column;
     align-items: flex-start;
 }
-.blg h3{
-    font-size: 17px;
+.blg h6{
+    
     width: 80%;
     line-height: 25px;
     text-align: left;
@@ -71,9 +70,13 @@
     border: none;
     margin-top: 5%;
 }
+.tls button:hover{
+    background-color: rgb(270, 6, 9);
+    color:white;
+}
 .tls .cmnt{
-    width: 35px;
-    height: 35px;
+    width: 12%;
+    height: 70%;
     border-radius: 50%;
     border: none;
     background-color: #ccc;
@@ -84,8 +87,31 @@
     right: 0;
     bottom: -12%;
 }
-@media screen and (max-width: 610px){
-.list-blog{
-	justify-content: center;
+@media screen and (max-width: 810px){
+    .list-blog{
+        justify-content: space-around;
+    }
+    .blg{
+        width:47%;
+        flex: none;
+    }
 }
+@media screen and (max-width: 570px){
+    .list-blog{
+        justify-content: space-around;
+    }
+    .blg{
+        width:75%;
+        flex: none;
+    }
 }
+@media screen and (max-width: 350px){
+    .list-blog{
+        justify-content: space-around;
+    }
+    .blg{
+        width:90%;
+        flex: none;
+    }
+}
+

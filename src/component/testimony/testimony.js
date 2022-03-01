@@ -1,4 +1,5 @@
 import React, {useEffect } from "react";
+import {Typography} from '@material-ui/core'
 import { Carousel } from 'rsuite';
 import Data from './data'
 import "./testimony.css"
@@ -12,19 +13,19 @@ function Testimony() {
     return (
         <div className='testimony' id="reservation">
              <div class="disc-testi">
-               <h2 className="design">Testimony</h2>
-               <span className='head-menu'>Happy Customer</span> 
+               <Typography variant='h4' className="design">Testimony</Typography>
+               <Typography variant='h4' className='header'>Happy Customer</Typography> 
                
             <Carousel className="custom-slider" >
              {Data.map((item)=>{
-                const{id,image,comment,name,type,icon} = item
+                const{id,image,comment,name,type} = item
                 return(
                 
-                  <div key={id} className='slid' data-aos="fade-up">
-                       <p>{comment}</p>
-                       <img src={image} className='image'/>
-                       <h1>{name}</h1>
-                       <span className='inf'>{type}</span>
+                  <div key={id} className='slid' data-aos="fade-up" data-aos-once="true">
+                       <Typography variant='h6' className='prg'>{comment}</Typography>
+                       <img src={image} alt={name} className='image'/>
+                       <Typography variant='h6'>{name}</Typography>
+                       <Typography className='inf'>{type}</Typography>
                   </div>
                  
                  )

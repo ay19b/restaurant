@@ -16,25 +16,14 @@
     align-items: center;
     flex-direction: column;
 }
-.disc-staff h3{
-    font-size: 25px;
-    color: #c9c4c4;
+.disc-staff h5{
+    margin-bottom: 2%;
 }
-.disc-staff span {
-    font-size: 30px;
-    font-weight: bold;
-	text-align: center;
+.disc-staff h4{
+    text-align: center;
 }
-
-
 @media screen and (max-width: 320px){
 .staff {
 	height: 30vh;
 }	
-.disc-staff h3{
-    font-size: 20px;
-}
-.disc-staff span {
-    font-size: 20px;
-}
 }

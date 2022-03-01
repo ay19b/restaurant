@@ -1,13 +1,14 @@
 import React from 'react'
 import './menu.css'
 import Catg from './catg'
+import {Typography} from '@material-ui/core'
 
 
 function Menu(){
     return(
         <div className="Menu" id="menu">
-            <h2 className="design">Specialties</h2>
-            <span className='head-menu'>Our Menu</span> 
+            <Typography variant='h4' className="design">Specialties</Typography>
+            <Typography variant='h4' className='head-menu'>Our Menu</Typography> 
             <div className="Categorys">
                <Catg cag="Breakfast"/>
                <Catg cag="Lunch"/>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Navbar, Nav} from 'rsuite';
+import {Typography} from '@material-ui/core'
 import {FaFacebookF,FaDribbble} from 'react-icons/fa';
 import {RiInstagramFill} from 'react-icons/ri'
 import {BsTwitter} from 'react-icons/bs'
@@ -39,59 +39,73 @@ function Header() {
 
       <>
       <nav className={nav?'nav active': 'nav'}>
-         <span>Phone no: +00 1234 567 or email us: emailsample@email.com</span>
+         <Typography variant='subtitle2'>Phone no: +00 1234 567 or email us: emailsample@email.com</Typography>
     
-         <ul>Mon - Fri / 9:00-21:00, Sat - Sun / 10:00-20:00
-           <li><FaFacebookF /></li>
-           <li><RiInstagramFill /></li>
-           <li><BsTwitter /></li>
-           <li><FaDribbble /></li>
+         <ul><Typography variant='subtitle2'>Mon - Fri / 9:00-21:00, Sat - Sun / 10:00-20:00</Typography>
+           <li><Typography variant='subtitle2'><FaFacebookF /></Typography></li>
+           <li><Typography variant='subtitle2'><RiInstagramFill /></Typography></li>
+           <li><Typography variant='subtitle2'><BsTwitter /></Typography></li>
+           <li><Typography variant='subtitle2'><FaDribbble /></Typography></li>
     
          </ul>
     
       </nav>
 
       
-         <nav className={navbar?'active': ''}>
+         <nav className={navbar?'active': null}>
             <div className="navbar-container">
-              <div className="logo"><span>Taste</span>.it</div>
+              <Typography variant='h4' className="logo">Taste.it</Typography>
             
                <ul className={showLinks ?"list-nav":"list-nav active"} >
               
                 <li className="item-nav">
+                <Typography variant='subtitle2'>
                   <a href="#home" onClick={toggleLinks}>
-                    HOME
+                   HOME
                   </a>
+                </Typography> 
                 </li>
                 <li className="item-nav" onClick={toggleLinks}>
+                <Typography variant='subtitle2'> 
                   <a href="#about" >
                     ABOUT
                   </a>
+                 </Typography> 
                 </li>
                 <li className="item-nav">
+                 <Typography variant='subtitle2'>
                    <a href="#chef" onClick={toggleLinks}>
                    CHEF
                    </a>
+                 </Typography>  
                 </li>
 			         	<li className="item-nav">
+                 <Typography variant='subtitle2'>  
                   <a href="#menu" onClick={toggleLinks}>
                     MENU
                   </a>
+                  </Typography> 
                 </li>
                 <li className="item-nav">
+                <Typography variant='subtitle2'> 
                   <a href="#reservation" onClick={toggleLinks}>
                     RESERVATION
                   </a>
+                </Typography> 
                 </li>
                 <li className="item-nav">
+                 <Typography variant='subtitle2'>
                    <a href="#blog" onClick={toggleLinks}>
                    blog
                    </a>
+                  </Typography>  
                 </li>
                 <li className="item-nav">
+                 <Typography variant='subtitle2'>
                    <a href="#contact" onClick={toggleLinks}>
                    CONTACT
                    </a>
+                  </Typography> 
                 </li>
                </ul>
                <i className="menu fas fa-bars" onClick={toggleLinks}></i>

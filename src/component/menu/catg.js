@@ -1,4 +1,5 @@
 import React, {useState,useEffect } from "react";
+import {Typography, Container,Grid,Badge,Button,InputAdornment,TextField} from '@material-ui/core'
 import Data from './data'
 import './menu.css'
 import Aos from 'aos'
@@ -11,21 +12,23 @@ function Catg({cag}) {
     },[]);
     return(
        <div className='category' >
-          <h3>{cag}</h3>
-          {Data
-                    .filter((filter) => filter.category === cag)
-                    .map((product)=>{
+          <Typography variant='h4'>{cag}</Typography>
+               {Data
+                  .filter((filter) => filter.category === cag)
+                  .map((product)=>{
                       
                         return(
-                          
-                          
-                           <div className="product" key={product.id} data-aos="fade-up">
+                           <div className="product" key={product.id} data-aos="fade-up"data-aos-once="true">
                               <div className="dtl-prod" >
                                 <img src={product.image} />
-                                <h2>{product.product}</h2>
-                                <h3>{product.price}</h3>
+                                <div className='center'>
+                                  <Typography variant='h6' className="name">{product.product}</Typography>
+                                  <Typography variant='h6' className='recipe'>{product.desc}</Typography>
+                                </div>
+                                
+                                <Typography variant='h6'className='price'>{product.price}</Typography>
                               </div>
-                              <span>{product.desc}</span>
+                              
                            </div>
                            
                         )

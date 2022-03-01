@@ -1,12 +1,13 @@
 import React from 'react'
+import {Typography} from '@material-ui/core'
 import './staff.css'
 
 function Staff(){
     return(
        <div className="staff">
            <div class="disc-staff">
-             <h3>Now Booking</h3>
-             <span>Private Dinners & Happy Hours</span>
+             <Typography variant='h5'>Now Booking</Typography>
+             <Typography variant='h4'>Private Dinners & Happy Hours</Typography>
            </div>
       </div>
     )

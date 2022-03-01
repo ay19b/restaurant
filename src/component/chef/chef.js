@@ -1,4 +1,5 @@
 import React, {useEffect } from "react";
+import {Typography, Container,Grid,Badge,Button,InputAdornment,TextField} from '@material-ui/core'
 import './chef.css'
 import Data from './data'
 import Chef4 from '../../images/chef-4.webp'
@@ -14,23 +15,21 @@ function Chef() {
     },[]);
     return (
         <div className="master-chef" id="chef">
-            <h2 className="design">Chef</h2>
-            <span className="header">Our Master Chef</span> 
+            <Typography variant='h4' className="design">Chef</Typography>
+            <Typography variant='h4' className="header">Our Master Chef</Typography> 
             <div className="list-chef">
 
             {Data.map((item)=>{
                 const{id,image,name,job,disc,delay} = item
                 return(
                 
-                <div className="chef" key={id} data-aos="fade-up" data-aos-delay={delay}>
+                <div className="chef" key={id} data-aos="fade-up" data-aos-delay={delay}data-aos-once="true">
                     <img src={image} />
-                    <h3>{name}</h3>
-                    <span>{job}</span>
-                    <p>{disc}</p>
+                    <Typography variant='h6'className="name">{name}</Typography>
+                    <Typography className="job">{job}</Typography>
+                    <Typography>{disc}</Typography>
 					<FiBookmark />
-                 </div>
-                 
-				 
+                </div>
                  )
                })}
              
@@ -39,11 +38,11 @@ function Chef() {
             <div className="detail" >
                 <div className='img'><img src={Chef4} /></div>
                 <div className='img'><img src={image} /></div>
-                <div className="inf-detail" data-aos="fade-left">
-                    <h1>This is our secrets</h1>
-                    <span>Perfect Ingredients</span>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. </p>
-                    <button>Learn more</button>
+                <div className="inf-detail" data-aos="fade-left" data-aos-once="true">
+                    <Typography variant='h4' className="design">This is our secrets</Typography>
+                    <Typography variant='h4' className="header">Perfect Ingredients</Typography>
+                    <Typography>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. </Typography>
+                    <Button>Learn more</Button>
                 </div>
                 
             </div>

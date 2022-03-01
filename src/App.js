@@ -8,9 +8,15 @@ import Testimony from './component/testimony/testimony';
 import Chef from './component/chef/chef';
 import Blog from './component/blog/blog';
 import Footer from './component/footer/footer';
+import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core';
+
+
 
 function App() {
+  let theme = createTheme();
+  theme = responsiveFontSizes(theme);
   return (
+    <ThemeProvider theme={theme}>
     <div className="App">
       <Header />
       <Home />
@@ -22,6 +28,7 @@ function App() {
       <Blog />
       <Footer />
     </div>
+    </ThemeProvider>
   );
 }
 

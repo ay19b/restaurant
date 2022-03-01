@@ -1,4 +1,5 @@
 import React, {useState,useEffect } from "react";
+import {Typography,Button,TextField} from '@material-ui/core'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { InputPicker } from 'rsuite';
@@ -17,18 +18,36 @@ function About() {
     return (
         <div className='about' id="about">
             <div className='card'>
-              <h1>Book your Table</h1>
-              <input placeholder='Name' className="input"/>
-              <input placeholder='Email' className="input"/>
-              <input placeholder='Phone' className="input"/>
+              <Typography variant='h4' className='header'>Book your Table</Typography>
+              <TextField
+                   id="outlined-hidden-label-small"
+                   size="small"
+                   variant="outlined"
+                   placeholder="Name"
+                   className="input"
+              />
+              <TextField
+                   id="outlined-hidden-label-small"
+                   size="small"
+                   variant="outlined"
+                   placeholder="Email"
+                   className="input"
+              />
+              <TextField
+                   id="outlined-hidden-label-small"
+                   size="small"
+                   variant="outlined"
+                   placeholder="Phone"
+                   className="input"
+              />
               <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} placeholder='Date'/>
               <InputPicker  placeholder='Guest'/>
-              <button>Book Your Table Now</button>
+              <Button variant="outlined">Book Your Table Now</Button>
             </div>
-            <div className='disc-about' data-aos="fade-left">
-                <h2 className="design">About</h2>
-                <h1>Welcome to Taste.it</h1>
-                <p>On her way she met a copy.
+            <div className='disc-about' data-aos="fade-left" data-aos-once="true">
+                <Typography variant='h3' className="design">About</Typography>
+                <Typography variant='h4'>Welcome to Taste.it</Typography>
+                <Typography>On her way she met a copy.
                      The copy warned the Little Blind Text,
                      that where it came from it would have 
                      been rewritten a thousand times and
@@ -39,7 +58,7 @@ function About() {
                      by their place and supplies it with the necessary regelialia.
                      It is a paradisematic country, in which roasted parts of
                      sentences fly into your mouth
-                </p>
+                </Typography>
             </div>
         </div>
     )

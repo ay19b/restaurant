@@ -1,5 +1,5 @@
-import React ,{useEffect} from 'react'
-import Header from '../navbar/header'
+import React, {useEffect } from 'react';
+import {Typography} from '@material-ui/core'
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import 'react-awesome-slider/dist/styles.css';
@@ -23,21 +23,22 @@ function Home(){
         
         <div className="overlay"></div>
           <AutoplaySlider
-              play={true}
+              play={false}
               cancelOnInteraction={false}
               interval={3000}
-              >
+          >
                
                  {Data.map((item)=>{
                 const{id,img,header,desc,inf} = item
                 return(
+               
                 
                   <div key={id} className='slider' >
-                     <img src={img} />
-                     <div className="disc" data-aos="fade-up">
-                       <span>{header}</span>
-                       <h1>{desc}</h1>
-                       <span className='inf'>{inf}</span>
+                     <img src={img} alt={desc}/>
+                     <div className="disc" data-aos="fade-up" data-aos-once="true">
+                       <Typography variant='h6'>{header}</Typography>
+                       <Typography variant='h1'>{desc}</Typography>
+                       <Typography className='inf'>{inf}</Typography>
                      </div>
                   </div>
                  

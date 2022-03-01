@@ -15,20 +15,29 @@
     align-items: center;
 	width: 20rem;
 }
+.card  .header{
+    color:white;
+    margin-bottom: 3%;
+}
 .card h1{
-    font-size: 27px;
     margin-top: 20%;
     color:white;
 }
 .card .input{
-    margin-bottom: 6%;
-    padding: 4%;
+    margin-bottom: 2%;
+    padding: 3% 0%;
     background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
     width: 65%;
     outline: none;
-    color: #f39ca1;
+    color: white;
+    cursor:pointer,
 }
+.MuiInputBase-root {
+    color: white !important;
+}
+.MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.23) !important;
+  }
 .react-datepicker-wrapper {
     display: inline-block;
     padding: 0px;
@@ -42,7 +51,7 @@
     padding: 6%;
     background-color: transparent;
     border: 1px solid #ed6b71;
-    color: #f39ca1;
+    color: white;
     width: 117%;
 }
 .rs-picker-toggle-wrapper {
@@ -80,11 +89,15 @@
    stroke: #f39ca1;
 }
 .card button{
+    padding: 3%;
     width: 65%;
-    padding: 5%;
     color: black;
-    font-size: 15px;
     margin-bottom: 30%;
+    background-color: white;
+}
+.card button:hover{
+    color: red;
+    background-color: white;
 }
 .disc-about{
     text-align: left;
@@ -99,7 +112,6 @@
     font-family: "Dancing Script", cursive;
     color: #eb5860;
     font-weight: normal;
-    font-size: 40px;
     display: block;
     position: relative;
     line-height: 1;
@@ -120,9 +132,7 @@
 .card {
     width: 80%;
 }
-.card .input {
-    padding: 2%;
-}
+
 .react-datepicker__input-container input {
     padding: 4%;
 }
