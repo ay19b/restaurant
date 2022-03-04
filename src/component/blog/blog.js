@@ -35,7 +35,7 @@ function Blog() {
              </div>
 
             </div>
-            <div className='blg'  data-aos="fade-up" data-aos-delay='100' data-aos-once="true">
+            <div className='blg'  data-aos="fade-up" data-aos-delay='250' data-aos-once="true">
               <img src={Img2} alt='img2' />
               <div className="dtl-blg">
                <Typography variant='body1' className="date">August 3, 2020 Admin</Typography>
@@ -49,7 +49,7 @@ function Blog() {
              </div>
 
             </div>
-            <div className='blg'  data-aos="fade-up" data-aos-delay='100' data-aos-once="true">
+            <div className='blg'  data-aos="fade-up" data-aos-delay='400' data-aos-once="true">
               <img src={Img3} alt='img3'/>
               <div className="dtl-blg">
                <Typography variant='body1' className="date">August 3, 2020 Admin</Typography>
