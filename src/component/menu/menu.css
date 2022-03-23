@@ -10,6 +10,7 @@
     position: relative;
     line-height: 1;
     margin-bottom: -12px;
+    font-size: 2rem;
 }
 .Menu .head-menu{
     font-weight: 700;
@@ -91,10 +92,6 @@
 }
 }
 @media screen and (max-width: 320px){
-	
-.Menu .design {
-    font-size: 35px;
-}
 .category {
     width: 15rem;
 }

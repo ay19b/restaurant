@@ -107,4 +107,15 @@
 .footer .head h1 {
     font-size: 25px;
 }
+.MuiGrid-container{
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+.MuiGrid-spacing-xs-2 > .MuiGrid-item {
+    margin: 1rem 0%;
+}
+.inf-item .icons{
+    justify-content: center;
+}
 }
