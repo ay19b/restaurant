@@ -132,11 +132,13 @@
     line-height: 35px;
 	width: 50%;
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 935px){
 .card {
     width: 80%;
 }
-
+.card .header{
+    margin-top: 3rem;
+}
 .react-datepicker__input-container input {
     padding: 4%;
 }

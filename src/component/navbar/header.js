@@ -29,7 +29,13 @@ function Header() {
 
   useEffect(() => {
     changeBackground()
-    window.addEventListener('scroll',changeBackground)  
+    window.addEventListener('scroll',changeBackground) 
+    if(showLinks){
+      document.body.style.position='fixed'
+    }
+    if(!showLinks){
+      document.body.style.position='unset'
+    }
   })
 	
 	
