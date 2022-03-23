@@ -12,6 +12,7 @@ function Catg({cag}) {
     },[]);
     return(
        <div className='category' >
+         
           <Typography variant='h4'>{cag}</Typography>
                {Data
                   .filter((filter) => filter.category === cag)
@@ -34,6 +35,7 @@ function Catg({cag}) {
                         )
                     })
                 }
+               
        </div>
     )
 }

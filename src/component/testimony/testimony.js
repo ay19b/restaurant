@@ -1,5 +1,5 @@
 import React, {useEffect } from "react";
-import {Typography} from '@material-ui/core'
+import {Typography,Container} from '@material-ui/core'
 import { Carousel } from 'rsuite';
 import Data from './data'
 import "./testimony.css"
@@ -12,10 +12,13 @@ function Testimony() {
      },[]);
     return (
         <div className='testimony' id="reservation">
-             <div class="disc-testi">
+            
+          <div class="disc-testi">
+             <Container>     
+             <div className='disc-header'>    
                <Typography variant='h4' className="design">Testimony</Typography>
                <Typography variant='h4' className='header'>Happy Customer</Typography> 
-               
+             </div> 
             <Carousel className="custom-slider" >
              {Data.map((item)=>{
                 const{id,image,comment,name,type} = item
@@ -31,7 +34,9 @@ function Testimony() {
                  )
                })}
             </Carousel>
-             </div>
+            </Container> 
+          </div>
+           
         </div>
     )
 }

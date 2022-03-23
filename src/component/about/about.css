@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 .about{
+   
+}
+.contAbout{
     display: flex;
     width: 95%;
     margin: auto;
 	flex-wrap: wrap;
 	justify-content: center;
 }
+
 .card{
     display: flex;
     flex-direction: column;

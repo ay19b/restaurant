@@ -15,8 +15,10 @@ function Chef() {
     },[]);
     return (
         <div className="master-chef" id="chef">
+          
             <Typography variant='h4' className="design">Chef</Typography>
             <Typography variant='h4' className="header">Our Master Chef</Typography> 
+            <Container>
             <div className="list-chef">
 
             {Data.map((item)=>{
@@ -34,8 +36,11 @@ function Chef() {
                })}
              
             </div>
+            </Container>
 
-            <div className="detail" >
+            <div className="detail">
+              <Container>  
+              <div className='cont-detail'>     
                 <div className='img'><img src={Chef4} /></div>
                 <div className='img'><img src={image} /></div>
                 <div className="inf-detail" data-aos="fade-left" data-aos-once="true">
@@ -43,10 +48,12 @@ function Chef() {
                     <Typography variant='h4' className="header">Perfect Ingredients</Typography>
                     <Typography>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. </Typography>
                     <Button>Learn more</Button>
+                 
                 </div>
-                
+                </div>
+              </Container>  
             </div>
-            
+             
         </div>
     )
 }

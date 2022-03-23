@@ -1,5 +1,5 @@
 import React, {useState,useEffect } from "react";
-import {Typography,Button,TextField} from '@material-ui/core'
+import {Typography,Button,TextField,Container} from '@material-ui/core'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { InputPicker } from 'rsuite';
@@ -16,7 +16,9 @@ function About() {
   },[]);
   
     return (
-        <div className='about' id="about">
+        <div  id="about">
+           <Container>
+           <div className='contAbout'>   
             <div className='card'>
               <Typography variant='h4' className='header'>Book your Table</Typography>
               <TextField
@@ -46,7 +48,7 @@ function About() {
             </div>
             <div className='disc-about' data-aos="fade-left" data-aos-once="true">
                 <Typography variant='h3' className="design">About</Typography>
-                <Typography variant='h4'>Welcome to Taste.it</Typography>
+                <Typography variant='h4' style={{color:'black'}}>Welcome to Taste.it</Typography>
                 <Typography>On her way she met a copy.
                      The copy warned the Little Blind Text,
                      that where it came from it would have 
@@ -60,6 +62,8 @@ function About() {
                      sentences fly into your mouth
                 </Typography>
             </div>
+            </div>  
+          </Container>    
         </div>
     )
 }

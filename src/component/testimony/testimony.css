@@ -29,6 +29,9 @@
     align-items: center;
     flex-direction: column;
 }
+.disc-header{
+    text-align: center;
+}
 .disc-testi h2{
     font-family: "Dancing Script", cursive;
     color: #eb5860;

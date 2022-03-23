@@ -25,7 +25,7 @@
 .category{
     display: flex;
     flex-direction: column;
-    width: 18rem;
+    width: 17rem;
     margin-bottom: 4%;
     border: 1px dashed #6f5d5d;
     margin-right: 2%;

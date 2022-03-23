@@ -1,5 +1,5 @@
 import React, {useEffect } from 'react';
-import {Typography} from '@material-ui/core'
+import {Typography,Container} from '@material-ui/core'
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import 'react-awesome-slider/dist/styles.css';
@@ -20,8 +20,9 @@ function Home(){
 
     return(
       <div className='home' id="home">
-        
+       
         <div className="overlay"></div>
+        
           <AutoplaySlider
               play={false}
               cancelOnInteraction={false}
@@ -32,7 +33,6 @@ function Home(){
                 const{id,img,header,desc,inf} = item
                 return(
                
-                
                   <div key={id} className='slider' >
                      <img src={img} alt={desc}/>
                      <div className="disc" data-aos="fade-up" data-aos-once="true">
@@ -47,7 +47,7 @@ function Home(){
             
             </AutoplaySlider>
             
-        
+         
      </div>
     )
 }

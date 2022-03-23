@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {Typography} from '@material-ui/core'
+import {Typography,Container} from '@material-ui/core'
 import {FaFacebookF,FaDribbble} from 'react-icons/fa';
 import {RiInstagramFill} from 'react-icons/ri'
 import {BsTwitter} from 'react-icons/bs'
@@ -38,7 +38,9 @@ function Header() {
     return (
 
       <>
+      <Container>
       <nav className={nav?'nav active': 'nav'}>
+        
          <Typography variant='subtitle2'>Phone no: +00 1234 567 or email us: emailsample@email.com</Typography>
     
          <ul><Typography variant='subtitle2'>Mon - Fri / 9:00-21:00, Sat - Sun / 10:00-20:00</Typography>
@@ -48,11 +50,12 @@ function Header() {
            <li><Typography variant='subtitle2'><FaDribbble /></Typography></li>
     
          </ul>
-    
+        
       </nav>
-
+      </Container>
       
          <nav className={navbar?'active': null}>
+         <Container>
             <div className="navbar-container">
               <Typography variant='h4' className="logo">Taste.it</Typography>
             
@@ -110,7 +113,7 @@ function Header() {
                </ul>
                <i className="menu fas fa-bars" onClick={toggleLinks}></i>
             </div>
-            
+            </Container> 
           </nav> 
 
   </>
