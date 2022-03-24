@@ -102,6 +102,8 @@ nav.active{
 nav{
 	background-color: black;
     padding:8px 0px;
+    position:fixed;
+    width:100%
 }
 nav.active{
     padding:8px 0px;

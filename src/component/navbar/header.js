@@ -31,7 +31,7 @@ function Header() {
     changeBackground()
     window.addEventListener('scroll',changeBackground) 
     if(showLinks){
-      document.body.style.position='fixed'
+      setNavbar(false)
     }
     if(!showLinks){
       document.body.style.position='unset'
