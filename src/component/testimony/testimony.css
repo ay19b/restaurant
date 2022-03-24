@@ -5,6 +5,8 @@
     background-position: center center;
     background-attachment: fixed;
     width:100%;
+    max-width: 1280px;
+    margin: auto;
 }
 .disc-testi .design{
     font-family: "Dancing Script", cursive;

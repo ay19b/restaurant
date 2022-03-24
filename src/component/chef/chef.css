@@ -1,6 +1,8 @@
 .master-chef{
     background-color: #f7f7f7;
     text-align: center;
+    max-width: 1280px;
+    margin: auto;
 }
 .master-chef .design{
     font-family: "Dancing Script", cursive;

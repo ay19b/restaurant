@@ -33,9 +33,6 @@ function Header() {
     if(showLinks){
       setNavbar(false)
     }
-    if(!showLinks){
-      document.body.style.position='unset'
-    }
   })
 	
 	

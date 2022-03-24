@@ -1,6 +1,8 @@
 .Menu{
     padding-top: 5%;
     text-align: center;
+    max-width: 1280px;
+    margin: auto;
 }
 .Menu .design{
     font-family: "Dancing Script", cursive;

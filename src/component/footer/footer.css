@@ -2,6 +2,8 @@
     background-color: black;
     padding-bottom: 4%;
 	overflow:hidden;
+    max-width: 1280px;
+    margin: auto;
 }
 .footer .head{
     padding: 6%;
