@@ -24,7 +24,7 @@ function Home(){
         <div className="overlay"></div>
         
           <AutoplaySlider
-              play={false}
+              play={true}
               cancelOnInteraction={false}
               interval={3000}
           >
