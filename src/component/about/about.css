@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+.contAbout{
+    display: flex;
+    width: 95%;
+    margin: auto;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #e52b34;
+    justify-content: center;
+    align-items: center;
+	width: 24rem;
+}
+.card  .header{
+    color:white;
+    margin-bottom: 3%;
+}
+.card h1{
+    margin-top: 20%;
+    color:white;
+}
+.card .input{
+    margin-bottom: 2%;
+    padding: 3% 0%;
+    background: transparent;
+    width: 65%;
+    outline: none;
+    color: white;
+    cursor:pointer,
+}
+.MuiInputBase-root {
+    color: white !important;
+}
+.MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.23) !important;
+  }
+.react-datepicker-wrapper {
+    display: inline-block;
+    padding: 0px;
+    border: 0;
+    width: 56%;
+}
+.react-datepicker__input-container {
+    margin-left: -8%;   
+}
+.react-datepicker__input-container input{
+    padding: 6%;
+    background-color: transparent;
+    border: 1px solid #ed6b71;
+    color: #f39ca1;
+    width: 117%;
+}
+.rs-picker-toggle-wrapper {
+    width: 65%;
+    margin: 6% 0%;
+	background-color: transparent;
+	padding: 1%;
+    border-radius: unset;
+	border: 1px solid #ed6b71
+}
+.rs-picker-default .rs-btn, .rs-picker-default .rs-picker-toggle, .rs-picker-input .rs-btn, .rs-picker-input .rs-picker-toggle {
+    background-color: transparent !important;
+}
+.rs-picker-toggle .rs-picker-toggle-placeholder {
+    color: #f39ca1;
+}
+.rs-picker-default .rs-picker-toggle.rs-btn .rs-picker-toggle-caret{
+	color: #f39ca1;
+}
+.react-time-picker{
+	width: 13rem;
+    height: 6%;
+    margin-top: 6%;
+    border: 1px solid #ed6b71;
+}
+.react-time-picker__wrapper {
+    border: thin solid #ed6b71;
+	color: #f39ca1;
+	padding-left: 4%;
+}
+.react-time-picker__inputGroup{
+	margin-right: 30%;
+}
+.react-time-picker__button svg{
+   stroke: #f39ca1;
+}
+.card button{
+    padding: 3%;
+    width: 65%;
+    color: black;
+    margin-bottom: 30%;
+    background-color: white;
+}
+.card button:hover{
+    color: red;
+    background-color: white;
+}
+.disc-about{
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 7%;
+	background-image:url(../../images/chef.webp);
+    background-size: cover;
+	background-position: right ;
+	width: 30rem;
+}
+.disc-about .design{
+    font-family: "Dancing Script", cursive;
+    color: #eb5860;
+    font-weight: normal;
+    display: block;
+    position: relative;
+    line-height: 1;
+    margin-bottom: -12px;
+    font-size: 2.6rem;
+}
+.disc-about h1{
+    font-size: 35px;
+    font-weight: 700;
+    color: black;
+    line-height: 40px;
+}
+.disc-about p{
+    font-size: 16px;
+    line-height: 35px;
+	width: 50%;
+}
+@media screen and (max-width: 935px){
+.card {
+    width: 80%;
+}
+.card .header{
+    margin-top: 3rem;
+}
+.react-datepicker__input-container input {
+    padding: 4%;
+}
+.card button {
+    padding: 2%;
+	margin-bottom: 8%;
+}
+.disc-about{
+	width: 100%;
+}
+}
+@media screen and (max-width: 600px){
+.card {
+    width: 100%;
+}
+.disc-about {
+    background-image: none;
+	text-align: center;
+}
+.disc-about p {
+    width: 100%;
+	margin-bottom:3%;
+}
+}
+@media screen and (max-width:320px){
+.disc-about h1 {
+    font-size: 30px;
+}
+.disc-about p {
+   font-size: 15px;
+}
+}

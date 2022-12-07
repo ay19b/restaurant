@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.home{
+  position:relative;
+  margin: auto;
+}
+.awssld {
+  z-index:10;
+  margin-top: -12%;
+}
+.awssld__wrapper {
+    overflow: visible;
+}
+.awssld__container {
+  /*opacity: 0.8; */
+}
+.awssld__controls {
+    visibility:hidden;
+}
+.awssld__bullets {
+  display: none;
+}
+.awssld__bullets .awssld__bullets--active {
+  transform: scale(1);
+  background: #cac5c5;
+}
+.awssld__bullets button{
+  z-index:2;
+}
+.slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.slider img{
+  width:100vw;
+  height:100%;
+}
+.slider .disc{
+  position: absolute;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.disc h6{
+    color: rgba(255,255,255,.9);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255,255,255,.5);
+    padding: 0 4px;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+}
+.disc h1{
+    color: #fff;
+    line-height: 1;
+    font-family: "Dancing Script",cursive;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.disc .inf {
+    font-size: 18px;
+    font-weight: 700;
+    color: #e52b34;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border:none;
+}
+.disc .inf::before{
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+    content: '';
+    width: 85px;
+    height: 1px;
+    background: #e52b34;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: -115px;
+}
+.disc .inf::after{
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  content: '';
+  width: 85px;
+  height: 1px;
+  background: #e52b34;
+  right: -115px;
+  -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width:900px){
+  .awssld {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width:600px){
+  .awssld {
+    height: 80vh;
+  }
+}
+
+
+

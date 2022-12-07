@@ -1,0 +1,124 @@
+.footer{
+    background-color: black;
+    padding-bottom: 4%;
+	overflow:hidden;
+    margin: auto;
+}
+.footer .head{
+    padding: 6%;
+    text-align: center;
+    background-color: #e90606;
+    color:white;
+}
+.footer button {
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color:white;
+}
+.dtl-footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 95%;
+    padding-top: 4%;
+	justify-content: space-between;
+}
+.item-ftr{
+    width: 238px;
+    padding: 2%;
+}
+.header{
+    color: white;
+}
+.inf-item{
+    list-style: none;
+    margin-top: 6%;
+}
+.inf-item p{
+    line-height: 25px;
+}
+.inf-item li{
+    display: flex;
+    justify-content: space-between;
+    color: #d7d4d4;
+    margin-bottom: 3%;
+}
+.inf-item li span{
+    color:#575757;
+}
+.inf-item .icons{
+    display: flex;
+    align-items: center;
+    margin-top: 8%;
+}
+.inf-item input{
+    padding: 5%;
+    background-color: #4b4b4b;
+    color: white;
+    text-align: center;
+    border: none;
+    margin: 5% 0%;
+    outline:none;
+	width: 96%;
+}
+.inf-item button{
+    width: 96%;
+    border: none;
+    background-color: rgb(233, 6, 6);
+    color: white;
+    padding: 5%;
+}
+.inf-item button:hover{
+    background-color: rgb(167, 51, 51);
+}
+.icons .icon{
+    width: 2.3rem;
+    height: 2.3rem;
+    background-color: rgb(233, 6, 6);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3%;
+    color:white;
+    cursor: pointer;
+}
+.photo{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.photo img{
+    width: 33%;
+    height: 4rem;
+}
+.footer .header{
+    margin-top: 18px;
+}
+
+
+@media screen and (max-width: 600px){
+.footer .head h1 {
+    font-size: 30px;
+}
+}
+@media screen and (max-width: 500px){
+.dtl-footer{
+	justify-content:center;	
+}
+.footer .head h1 {
+    font-size: 25px;
+}
+.MuiGrid-container{
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+.MuiGrid-spacing-xs-2 > .MuiGrid-item {
+    margin: 1rem 0%;
+}
+.inf-item .icons{
+    justify-content: center;
+}
+}

@@ -1,0 +1,143 @@
+.testimony{
+    background-image:url(../../images/xbg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    width:100%;
+    margin: auto;
+}
+.disc-testi .design{
+    font-family: "Dancing Script", cursive;
+    color: #eb5860;
+    font-weight: normal;
+    display: block;
+    position: relative;
+    line-height: 1;
+    margin-bottom: -12px;
+    padding-top: 4%;
+    font-size: 2.5rem;
+}
+.disc-testi .header{
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+}
+.disc-testi{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.disc-header{
+    text-align: center;
+}
+.disc-testi h2{
+    font-family: "Dancing Script", cursive;
+    color: #eb5860;
+    font-weight: normal;
+    font-size: 40px;
+    display: block;
+    position: relative;
+    line-height: 1;
+    margin-bottom: -12px;
+    margin-top: 4%;
+}
+.disc-testi span{
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+}
+.rs-carousel {
+    background-color: transparent;
+}
+.slid {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    margin-top:1%;
+}
+.slid .prg {
+    margin-bottom: 6px;
+    text-align: center;
+}
+.slid .image {
+    width: 3rem;
+    border-radius: 50%;
+    margin:2% 0%;
+}
+.slid .quote{
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 47%;
+    left: 10.2%;
+    color:red;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+}
+.slid .quote svg{
+    font-size: 15px;
+}
+.slid h1{
+    font-size: 18px;
+    line-height: 3px;
+}
+.slid .inf{
+    font-size: 12px;
+    color:#ccc;
+    text-align: center;
+}
+.rs-carousel-label-wrapper input:checked ~ label {
+    background-color: red;
+}
+.rs-carousel-placement-bottom .rs-carousel-toolbar {
+    bottom: 18px;
+}
+
+
+@media screen and (min-width: 1200px){
+.slid p {
+    width: 36%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.slid .image {
+    width: 8%;
+    border-radius: 50%;
+    margin: 2% 0%;
+}
+.slid h1 {
+    line-height: 6px;
+}
+.slid .inf {
+    color: #ccc;
+}
+
+.rs-carousel-shape-dot .rs-carousel-label {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.rs-carousel {
+    overflow: unset;
+}
+}
+
+@media screen and (max-width: 320px){
+.slid p {
+    width: 15rem; 
+}
+.slid .image {
+    margin: 6% 0%;
+}
+}
+

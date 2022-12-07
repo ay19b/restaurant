@@ -1,0 +1,112 @@
+.Menu{
+    padding-top: 5%;
+    text-align: center;
+    margin: auto;
+}
+.Menu .design{
+    font-family: "Dancing Script", cursive;
+    color: #eb5860;
+    font-weight: normal;
+    display: block;
+    position: relative;
+    line-height: 1;
+    margin-bottom: -12px;
+    font-size: 2rem;
+}
+.Menu .head-menu{
+    font-weight: 700;
+    color: black;
+    line-height: 40px;
+}
+.Categorys{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4% 4%;
+	justify-content: center;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    width: 21rem;
+    margin-bottom: 16px;
+    border: 1px dashed #6f5d5d;
+    margin-right: 2%;
+    background-color: #f7f7f7;
+    padding: 2% 0 3% 0;
+}
+.category:hover{
+	border: 1px dashed red;
+}
+.category h4{
+    margin-bottom: 9%;
+    color: black;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 5% 10px 0% 14px;
+    margin-bottom: 8%;
+}
+/*.product::after{
+    border: 1px dashed #6f5d5d;
+    width:70%;
+    position:absolute;
+    content:" ";
+    margin: auto;
+	margin-bottom:1%;
+}*/
+.dtl-prod {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .product img {
+    width: 30%;
+    border-radius: 50%;
+    flex: 0.3;
+    margin-right: 2%;
+  }
+  .dtl-prod .center{
+    flex: 0.5;
+    text-align: left;
+  }
+.dtl-prod .name{
+    font-weight: normal;
+    line-height: 23px;
+    color: black;
+}
+.dtl-prod .price {
+    color: red;
+    flex: 0.2;
+  }
+.product .recipe{
+    line-height: 30px;
+    text-align: left;
+    
+}
+
+@media screen and (max-width: 920px){
+.rs-navbar-default:nth-child(1) {
+    display: none;
+}
+}
+@media screen and (max-width: 320px){
+.category {
+    width: 15rem;
+}
+.category h3{
+	font-size:25px;
+}
+.dtl-prod h2 {
+    font-size: 20px;
+    margin-left: -32%;
+}
+.dtl-prod h3{
+	font-size: 20px;
+}
+.product span {
+    font-size: 15px;
+}
+}

@@ -1,0 +1,155 @@
+.master-chef{
+    background-color: #f7f7f7;
+    text-align: center;
+}
+.master-chef .design{
+    font-family: "Dancing Script", cursive;
+    color: #eb5860;
+    font-weight: normal;
+    display: block;
+    position: relative;
+    line-height: 1;
+    margin-bottom: -12px;
+    padding-top: 4%;
+    font-size: 2.1rem;
+}
+.master-chef .header{
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    line-height: 40px;
+}
+.list-chef{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 6%;
+}
+.list-chef .chef{
+    flex:0.233;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    position:relative;
+	padding-bottom: 2%;
+    box-shadow: 1px 2px 4px 3px #ccc;
+	margin-bottom: 15%;
+}
+.chef img{
+    width:100%;
+    height:16rem;
+	object-fit: cover;
+}
+.chef .name{
+    color:black;
+}
+.chef .job{
+    color: #ccc;
+}
+.chef p{
+    margin-top: 4%;
+    width: 86%;
+    line-height: 1.6rem;
+}
+.chef svg{
+	position: absolute;
+    bottom: -7%;
+    font-size: 2rem;
+    left: 5%;
+	fill: red;
+	stroke:red;
+}
+.detail{
+    background-color: white;
+}
+.cont-detail{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10%;
+    padding:0% 6%;
+    background-color: white;
+}
+.detail .img{
+    width: 21%;
+    height: 20rem;
+    margin-right: 2%;
+}
+.detail img{
+    width: 100%;
+    height: 20rem;
+	object-fit: cover;
+}
+.inf-detail{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+	width: 51%;
+    text-align: left;
+}
+.inf-detail h1{
+    font-family: "Dancing Script", cursive;
+    color: #eb5860;
+    font-weight: normal;
+    font-size: 40px;
+    display: block;
+    position: relative;
+    line-height: 1;
+    margin-bottom: -12px;
+}
+.inf-detail p{
+    margin: 3% 0%;
+    color: rgb(146, 142, 142);
+    text-align: start;
+    line-height: 35px;
+}
+.inf-detail button{
+    background-color: rgb(233, 6, 6);
+    color:white;
+    width: 50%;
+}
+.inf-detail button:hover{
+    background-color: rgb(185, 55, 55);
+}
+
+@media screen and (max-width: 900px){
+    .list-chef .chef{
+        flex: none;
+        width: 44%;
+    }
+}
+@media screen and (max-width: 650px){
+    .detail .img{
+        width: 48%;
+    }
+    .inf-detail {
+        width: 80%; 
+    }
+}
+
+@media screen and (max-width: 495px){
+.list-chef{
+    justify-content: center;
+}
+.list-chef .chef{
+    flex: none;
+    width: 85%;
+}
+.detail {
+    justify-content: center;
+}
+.inf-detail button{
+    width:100%
+}
+}
+@media screen and (max-width:330px) {
+.master-chef .design {
+	margin-bottom: -15px;
+}
+.list-chef .chef{
+    flex: none;
+    width: 75%;
+}
+}

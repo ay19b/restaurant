@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.App {
+  font-family: "Roboto", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+*{
+  margin: 0;
+}
+html {
+     scroll-behavior: smooth;
+}
+body{
+	 overflow-x: hidden;
+   background-color: white;
+}
+@media screen and (min-width: 1280px){
+  .MuiContainer-root-32{
+    max-width: 1280px;
+  }
+}
