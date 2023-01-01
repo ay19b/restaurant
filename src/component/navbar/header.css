@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+
 .nav{
     display:none;
 }
@@ -32,7 +35,7 @@ nav{
     z-index:100;
 }
 nav.active{
-    background-color: #030f0f;
+    background-color: black;
     z-index: 15;
     box-shadow: 0px 3px 12px -3px #fff;
     position: fixed;
@@ -81,6 +84,8 @@ nav.active{
     margin-right: 27px;
     cursor: pointer;
     color: white;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 15px;
 }
 .list-nav .item-nav a:hover{
     color: #b10b5e;
