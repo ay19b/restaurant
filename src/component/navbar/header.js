@@ -56,7 +56,7 @@ function Header() {
       </nav>
       
       
-         <nav className={navbar ||showLinks ?window.pageYOffset=0?'active':null: null}>
+         <nav className={navbar ||showLinks ?'active': null}>
             <div className="navbar-container">
               <Typography variant='h4' className="logo">Taste.it</Typography>
             
